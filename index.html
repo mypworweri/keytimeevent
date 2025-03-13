@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timed Key Event</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="timer" id="timer-display">00:00:00</div>
+
+    <div class="container">
+        <div class="left-section">
+            <h2>Timed Key Sequence Event</h2>
+            <div>
+                <label for="key-sequence">Enter key sequence (no commas, e.g., goh9):</label>
+                <input type="text" id="key-sequence" placeholder="e.g., free2">
+            </div>
+            <div>
+                <label for="time-limit">Enter time limit seconds only, please mind e.g. 0,1 will not work:</label>
+                <input type="number" id="time-limit" placeholder="e.g., 2">
+            </div>
+            <button id="start-btn">Start Event</button>
+            <div class="feedback" id="feedback" style="color: red;">Time is up or the sequence was incorrect. Try again!</div>
+        </div>
+
+        <div class="right-section">
+            <h3>Press this Sequence</h3>
+            <div class="key-sequence-display" id="key-sequence-display">
+                <!-- Keys will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    
+
+</body>
+</html>
